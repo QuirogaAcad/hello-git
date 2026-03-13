@@ -23,3 +23,4 @@ git log --graph --prety=oneline
 git log --graph --decorate --all --oneline
 git config --global alias.arbol "log --graph --decorate --all --oneline"
 git arbol
+touch .gitignore
