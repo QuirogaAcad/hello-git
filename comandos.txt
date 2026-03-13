@@ -28,3 +28,5 @@ git diff             # Muestra las diferencias entre los cambios actuales y el Ã
 git checkout HEAD    # Restaura los archivos al estado del Ãºltimo commit (descarta cambios no guardados)
 git reset --hard
 git reflog
+git tag
+git checkout tag/dia1
