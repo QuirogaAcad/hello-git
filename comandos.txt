@@ -1,0 +1,8 @@
+git
+git --version
+clear
+ls
+cd
+pwd
+mkdir
+code .
