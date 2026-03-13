@@ -26,3 +26,5 @@ git arbol            # Ejecuta el alias creado y muestra el árbol de commits
 touch .gitignore     # Crea el archivo .gitignore para indicar qué archivos Git debe ignorar
 git diff             # Muestra las diferencias entre los cambios actuales y el último commit
 git checkout HEAD    # Restaura los archivos al estado del último commit (descarta cambios no guardados)
+git reset --hard
+git reflog
