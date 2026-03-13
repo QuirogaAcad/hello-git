@@ -24,3 +24,5 @@ git log --graph --decorate --all --oneline
 git config --global alias.arbol "log --graph --decorate --all --oneline"
 git arbol
 touch .gitignore
+git diff
+git checkout HEAD
