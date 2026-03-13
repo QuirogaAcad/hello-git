@@ -6,23 +6,23 @@ cd              # Cambia de directorio (navegar entre carpetas)
 pwd             # Muestra la ruta completa de la carpeta actual
 mkdir           # Crea una nueva carpeta (directorio)
 code .          # Abre la carpeta actual en Visual Studio Code
-git config --global user.name "Gab0"
-git config --global user.email "quiroga.acad@gmail.com"
-touch hellogit.py
-git init
-git branch -m main
-git status
-git add hellogit.py
-git add .
-git commit -m "Este es mi primer commit"
-git log
-git checkout
-git reset
-git log --graph
-git log --graph --prety=oneline
-git log --graph --decorate --all --oneline
-git config --global alias.arbol "log --graph --decorate --all --oneline"
-git arbol
-touch .gitignore
-git diff
-git checkout HEAD
+git config --global user.name "Gab0"  # Configura tu nombre de usuario global para los commits
+git config --global user.email "quiroga.acad@gmail.com"  # Configura tu email global para identificar tus commits
+touch hellogit.py  # Crea un archivo vacío llamado hellogit.py
+git init  # Inicializa un repositorio Git en la carpeta actual (empieza el control de versiones)
+git branch -m main  # Cambia el nombre de la rama actual a "main"
+git status  # Muestra el estado del repositorio (archivos modificados, agregados, etc.)
+git add hellogit.py  # Agrega ese archivo al área de preparación (staging) para el próximo commit
+git add .  # Agrega TODOS los archivos modificados al área de preparación
+git commit -m "Este es mi primer commit"  # Guarda un punto de versión del proyecto con un mensaje descriptivo
+git log  # Muestra el historial de commits del repositorio
+git checkout  # Cambia de rama o restaura archivos a una versión anterior
+git reset  # Quita cambios del área de preparación o vuelve el repositorio a un commit anterior
+git log --graph  # Muestra el historial de commits con un gráfico de ramas en texto
+git log --graph --prety=oneline  # Muestra el historial en una sola línea por commit (nota: debería ser --pretty)
+git log --graph --decorate --all --oneline  # Muestra TODAS las ramas con gráfico, nombres de ramas y commits resumidos
+git config --global alias.arbol "log --graph --decorate --all --oneline"  # Crea un alias llamado "arbol" para no tener que escribir todo ese comando largo
+git arbol  # Ejecuta el alias creado y muestra el árbol de commits
+touch .gitignore  # Crea el archivo .gitignore para indicar qué archivos Git debe ignorar
+git diff  # Muestra las diferencias entre los cambios actuales y el último commit
+git checkout HEAD  # Restaura los archivos al estado del último commit (descarta cambios no guardados)
