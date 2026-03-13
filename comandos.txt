@@ -1,8 +1,20 @@
-git
-git --version
-clear
-ls
-cd
-pwd
-mkdir
-code .
+git             # Ejecuta Git y muestra ayuda básica o lista de comandos disponibles
+git --version   # Muestra la versión de Git instalada en la computadora
+clear           # Limpia la pantalla de la terminal
+ls              # Lista los archivos y carpetas del directorio actual
+cd              # Cambia de directorio (navegar entre carpetas)
+pwd             # Muestra la ruta completa de la carpeta actual
+mkdir           # Crea una nueva carpeta (directorio)
+code .          # Abre la carpeta actual en Visual Studio Code
+git config --global user.name "Gab0"
+git config --global user.email "quiroga.acad@gmail.com"
+touch hellogit.py
+git init
+git branch -m main
+git status
+git add hellogit.py
+git add .
+git commit -m "Este es mi primer commit"
+git log
+git checkout
+git reset
