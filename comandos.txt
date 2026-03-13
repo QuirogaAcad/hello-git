@@ -18,3 +18,4 @@ git commit -m "Este es mi primer commit"
 git log
 git checkout
 git reset
+git log --graph
