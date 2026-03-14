@@ -33,7 +33,9 @@ git checkout tag/dia1  # Cambia el repositorio al estado guardado en el tag llam
 git branch login     # Crea una nueva rama llamada "login"
 git switch login     # Cambia a la rama llamada "login"
 git merge main       # Fusiona los cambios de la rama "main" en la rama actual
-git stash 
-git stash list
-git stash pop
-git stash drop
+git stash            # Guarda temporalmente los cambios no confirmados (sin commit) para limpiar el área de trabajo
+git stash list       # Muestra la lista de cambios guardados en el stash
+git stash pop        # Recupera el último cambio guardado en el stash y lo elimina de la lista
+git stash drop       # Elimina un stash específico sin aplicarlo
+git diff login       # Muestra las diferencias entre la rama actual y la rama llamada "login"
+git branch -d login  # Elimina la rama llamada "login" (solo si ya fue fusionada)
