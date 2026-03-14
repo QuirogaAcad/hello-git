@@ -39,3 +39,5 @@ git stash pop        # Recupera el último cambio guardado en el stash y lo elim
 git stash drop       # Elimina un stash específico sin aplicarlo
 git diff login       # Muestra las diferencias entre la rama actual y la rama llamada "login"
 git branch -d login  # Elimina la rama llamada "login" (solo si ya fue fusionada)
+git remote add origin git@github.com:QuirogaAcad/hello-git.git
+git push -u origin main
