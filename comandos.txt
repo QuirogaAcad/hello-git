@@ -32,3 +32,4 @@ git tag
 git checkout tag/dia1
 git branch login
 git switch login
+git marge main
