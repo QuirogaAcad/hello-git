@@ -39,5 +39,10 @@ git stash pop        # Recupera el último cambio guardado en el stash y lo elim
 git stash drop       # Elimina un stash específico sin aplicarlo
 git diff login       # Muestra las diferencias entre la rama actual y la rama llamada "login"
 git branch -d login  # Elimina la rama llamada "login" (solo si ya fue fusionada)
-git remote add origin git@github.com:QuirogaAcad/hello-git.git
-git push -u origin main
+git remote add origin git@github.com:QuirogaAcad/hello-git.git  # Conecta el repositorio local con GitHub
+git push -u origin main      # Sube la rama main al repositorio remoto y la deja como seguimiento
+git fetch                    # Descarga cambios del repositorio remoto sin aplicarlos
+git merge origin/main        # Fusiona los cambios descargados del remoto con tu rama actual
+:q                           # Comando de Vim para salir del editor
+git config pull.rebase false # Configura el comportamiento de git pull para usar merge en vez de rebase
+git push origin main         # Sube los cambios de la rama main al repositorio remoto
