@@ -30,3 +30,5 @@ git reset --hard
 git reflog
 git tag
 git checkout tag/dia1
+git branch login
+git switch login
