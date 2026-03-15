@@ -47,3 +47,4 @@ git merge origin/main        # Fusiona los cambios descargados del remoto con tu
 git config pull.rebase false # Configura el comportamiento de git pull para usar merge en vez de rebase
 git push origin main         # Sube los cambios de la rama main al repositorio remoto
 git clone git@github.com:QuirogaAcad/hello-git.git
+git pull origin main --allow-unrelated-histories #El origen tiene algo
